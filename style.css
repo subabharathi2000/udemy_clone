@@ -14,6 +14,7 @@ body{
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 3;
   background-color: white;
 }
 .navrbar__s1__title{
