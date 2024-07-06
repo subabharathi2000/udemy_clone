@@ -41,6 +41,9 @@ body{
   display: flex;
   gap: 20px; 
 }
+.navbar__s4{
+  display: none;
+}
 .mylearnings{
   position: relative;
   cursor: pointer;
@@ -119,6 +122,9 @@ body{
   width: 280px;
   margin-top: 10px;
   padding: 10px;
+  flex-grow: 1;
+  margin: 10px;
+  flex-basis: 20%;
 }
 .course-card img{
   width: 100%;
@@ -137,6 +143,7 @@ body{
   gap: 10px;
   margin-top: 10px;
   flex-wrap: wrap;
+  flex-basis: 20%;
 } 
 .topics__container p{
   border: solid gray 1px;
@@ -179,4 +186,30 @@ body{
 }
 .popular__container .course-card{
   margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width:800px) {
+  body{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+  .course-card{
+    flex-basis: 40%;
+  }
+  .categories{
+    display: none;
+  }
+  .sale-img__offer{
+    width: 130px;
+    top: 80px;
+    left: 30px;
+  }
+  .navrbar__s2, .navrbar__s3{
+    display: none;
+  }
+  .navbar__s4{
+    display: block;
+  }
 }
