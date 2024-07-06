@@ -195,7 +195,7 @@ body{
   }
 }
 @media screen and (max-width:600px) {
-  .course-card{
+  .course-card, .recommended__container{
     flex-basis: 40%;
   }
   .categories{
